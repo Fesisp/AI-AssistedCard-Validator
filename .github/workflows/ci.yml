@@ -22,10 +22,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f requisitos ]; then pip install -r requisitos; fi
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run tests with coverage
         run: |
-          python -m pytest --cov="Projeto Validador de Cartao pelo Github Copilot" --cov-report=xml -q
+          python -m pytest --cov=card_validator --cov-report=xml -q
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
         with:

@@ -10,6 +10,6 @@ Regras rápidas:
 Configuração local rápida:
 
 ```powershell
-& '.\.venv\Scripts\python.exe' -m pip install -r requisitos
+& '.\.venv\Scripts\python.exe' -m pip install -r requirements.txt
 & '.\.venv\Scripts\python.exe' -m pytest -q
 ```

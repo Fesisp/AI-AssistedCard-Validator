@@ -8,6 +8,8 @@
 
 > A robust credit card brand identifier developed to demonstrate **AI Pair Programming** efficiency. It features automated testing pipelines and code coverage analysis.
 
+![Copilot Demo](assets/demo-usage.png)
+
 ## 📋 Project Overview
 
 This project was built to explore the capabilities of **GitHub Copilot** in a real-world coding scenario. The goal was to develop a logic that identifies credit card brands (Visa, Mastercard, Elo) based on input patterns.
@@ -39,9 +41,10 @@ Beyond the logic, this repository serves as a **DevOps & QA Lab**, demonstrating
 ```text
 ai-assisted-card-validator/
 ├── .github/workflows/   # CI Pipeline configuration (YAML)
-├── docs/                # Documentation assets
+├── assets/              # Project assets
+├── docs/                # Documentation
 ├── tests/               # Unit tests (Pytest)
-├── identificador_bandeira_cartao.py  # Core Logic Script
+├── card_validator.py    # Core Logic Script
 ├── requirements.txt     # Dependencies
 └── README.md            # Project documentation
 ```
@@ -58,7 +61,7 @@ pip install -r requirements.txt
 Run the script (Manual Test):
 
 Bash
-python identificador_bandeira_cartao.py
+python card_validator.py
 Run Automated Tests:
 
 Bash
@@ -71,38 +74,3 @@ LinkedIn
 Portfolio
 
 This project demonstrates the synergy between Human Engineering and Artificial Intelligence.
-
-
----
-
-### 3. O Arquivo `.gitignore` (Limpeza)
-
-Você tem pastas de cache (`__pycache__`) e arquivos de cobertura (`.coverage`) que não devem ser versionados. Use este `.gitignore` para limpar a casa.
-
-**Arquivo:** `.gitignore`
-
-```text
-# Python caches
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Testing & Coverage
-.coverage
-htmlcov/
-coverage.xml
-.pytest_cache/
-
-# Environment
-.env
-.venv/
-venv/
-env/
-
-# IDEs
-.vscode/
-.idea/
-```
-# OS Files
-.DS_Store
-Thumbs.db
