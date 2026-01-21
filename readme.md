@@ -64,7 +64,7 @@ Run Automated Tests:
 Bash
 pytest -v
 👨‍💻 Author
-Felipe Spinola
+Felipe da Silva Spinola
 
 LinkedIn
 
